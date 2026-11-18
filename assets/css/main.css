@@ -737,3 +737,12 @@ body{margin:0;background:#F4EDE3}
 /* placeholders on the espresso footer bar */
 .fbar .ph{color:var(--sand)}
 .tl__l{background:linear-gradient(rgba(26,18,13,.4),rgba(26,18,13,.9) 55%)}
+/* v5.4: O nama — two equal images with a real gap */
+.duo{grid-template-columns:repeat(2,minmax(0,1fr));gap:2rem}
+@container (max-width:991px){.duo{grid-template-columns:1fr}}
+/* v5.4: navigation always visible (no hide on scroll) */
+.hdr.is-hidden{transform:none!important;opacity:1!important}
+/* v5.4: social squares — all four in one row */
+.socials{display:grid;grid-template-columns:repeat(4,52px);gap:10px}
+.sq{width:52px;height:52px}
+.sq svg{width:18px;height:18px}
