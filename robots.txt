@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+# Posle objave zamenite adresom sajta, npr. https://korisnik.github.io/en-dizajn/sitemap.xml ili vašim domenom
+Sitemap: https://[[PLACEHOLDER: adresa sajta]]/sitemap.xml
