@@ -713,3 +713,27 @@ body{margin:0;background:#F4EDE3}
 .card--low .card__bg::after{background:linear-gradient(180deg,rgba(26,18,13,0) 38%,rgba(26,18,13,.74))}
 .card--low .card__t{text-shadow:0 1px 12px rgba(26,18,13,.35)}
 @container (max-width:991px){.duo__mid{top:16px;right:auto;left:16px;transform:none}}
+
+/* ---------- v5.3 contrast pass (WCAG AA, measured on the real images) ---------- */
+/* hero halves + world bands: scrim starts where the text starts and ends near-opaque */
+.half::after,.wband::after{background:linear-gradient(180deg,rgba(26,18,13,.42) 0,rgba(26,18,13,0) 22%,rgba(26,18,13,0) 34%,rgba(26,18,13,.62) 52%,rgba(26,18,13,.9) 100%)}
+.half__k,.wband__k,.half__s,.wband__s{color:var(--cream)}
+.half__c,.wband__c{text-shadow:0 1px 18px rgba(26,18,13,.35)}
+@container (max-width:991px){
+  .half::after,.wband::after{background:linear-gradient(180deg,rgba(26,18,13,.42) 0,rgba(26,18,13,0) 16%,rgba(26,18,13,.55) 30%,rgba(26,18,13,.88) 55%,rgba(26,18,13,.93) 100%)}
+}
+/* model cards: a frosted espresso label behind name and caption, image stays clean */
+.card--low .card__bg::after{background:linear-gradient(180deg,rgba(26,18,13,0) 60%,rgba(26,18,13,.35))}
+.card--low .card__c{gap:6px;padding:0 20px 20px}
+.card--low .card__t,.card--low .card__cap{background:rgba(26,18,13,.74);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);color:var(--cream);border-radius:999px;text-shadow:none}
+.card--low .card__t{padding:.45em .9em .4em;font-size:1.05rem;letter-spacing:.14em}
+.card--low .card__cap{padding:.45em 1em;font-size:.6875rem;max-width:none}
+/* centred card titles (style tile and any non-low card) */
+.card:not(.card--low) .card__bg::after{background:radial-gradient(ellipse 72% 62% at 50% 50%,rgba(26,18,13,.66),rgba(26,18,13,.22) 85%)}
+/* banner + Instagram labels */
+.banner__ov{background:rgba(34,25,19,.68)}
+.banner__c .t-micro{color:var(--cream)}
+.tl__l{background:linear-gradient(rgba(26,18,13,0),rgba(26,18,13,.82) 45%)}
+/* placeholders on the espresso footer bar */
+.fbar .ph{color:var(--sand)}
+.tl__l{background:linear-gradient(rgba(26,18,13,.4),rgba(26,18,13,.9) 55%)}
