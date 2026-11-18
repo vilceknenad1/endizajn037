@@ -12,8 +12,8 @@
     '06': [1254, 790, 'BUBBLE krevet u spavaćoj sobi'],
     '07': [1254, 790, 'BUBBLE krevet, frontalni pogled'],
     '08': [1254, 753, 'BUBBLE krevet, simetričan pogled na uzglavlje'],
-    '09': [1536, 625, 'BABL BABY dečiji krevet sa uzglavljem oblaka'],
-    '10': [1536, 625, 'BABL BABY dečiji krevet iz ugla'],
+    '09': [1536, 625, 'BUBBLE BABY dečiji krevet sa uzglavljem oblaka'],
+    '10': [1536, 625, 'BUBBLE BABY dečiji krevet iz ugla'],
     '11': [1312, 803, 'Dečiji krevet sa mišjim ušima'],
     '12': [1102, 647, 'Dečiji krevet sa mišjim ušima, frontalno'],
     '13': [1254, 739, 'ZEKA dečiji krevet sa zečjim ušima i džepovima'],
@@ -26,7 +26,7 @@
     { slug: 'bubble', name: 'BUBBLE', cats: ['kreveti'], catLabel: 'Kreveti · francuski ležaj', imgs: [['06', '45% 60%'], ['07', '50% 60%'], ['08', '50% 55%']], caption: 'Dostava i montaža širom Srbije', desc: 'Segmentirana tapacirana baza i visoko kapitonirano uzglavlje. Izrada po vašoj želji, dostava i montaža širom Srbije.' },
     { slug: 'zeka', name: 'ZEKA', cats: ['decji'], catLabel: 'Dečiji kreveti', imgs: [['13', '45% 55%']], caption: 'Ogradice i džepovi', desc: 'Dečiji krevet sa zečjim ušima, zaštitnim ogradicama i džepovima.', dims: [90, 120, 140], extras: ['Zaštitne ogradice', 'Džepovi'] },
     { slug: 'meda', name: 'MEDA', cats: ['decji'], catLabel: 'Dečiji kreveti', imgs: [['14', '50% 50%']], caption: '90, 120 i 140 × 200 cm', desc: 'Dečiji krevet sa ušima medveda. Pravi se u tri dimenzije.', dims: [90, 120, 140] },
-    { slug: 'babl-baby', name: 'BABL BABY', cats: ['decji'], catLabel: 'Dečiji kreveti', imgs: [['09', '45% 55%'], ['10', '35% 55%']], caption: 'Uzglavlje u obliku oblaka', desc: 'Dečiji krevet sa uzglavljem u obliku oblaka i udobnim dušekom.' },
+    { slug: 'bubble-baby', name: 'BUBBLE BABY', cats: ['decji'], catLabel: 'Dečiji kreveti', imgs: [['09', '45% 55%'], ['10', '35% 55%']], caption: 'Uzglavlje u obliku oblaka', desc: 'Dečiji krevet sa uzglavljem u obliku oblaka i udobnim dušekom.' },
     { slug: 'mali-krevet', name: 'Mali krevet', placeholderName: true, cats: ['decji'], catLabel: 'Dečiji kreveti', imgs: [['11', '50% 60%'], ['12', '50% 60%']], caption: 'Mali krevet za velike snove', desc: '„Mali krevet za velike snove“, sa uzglavljem u obliku mišjih ušiju.' }
   ];
   var CATS = [['all', 'Sve'], ['garniture', 'Garniture'], ['fotelje', 'Fotelje i dvosedi'], ['kreveti', 'Kreveti'], ['decji', 'Dečiji kreveti'], ['odmah', 'Odmah dostupno']];

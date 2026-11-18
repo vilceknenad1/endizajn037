@@ -746,3 +746,22 @@ body{margin:0;background:#F4EDE3}
 .socials{display:grid;grid-template-columns:repeat(4,52px);gap:10px}
 .sq{width:52px;height:52px}
 .sq svg{width:18px;height:18px}
+
+/* v5.5: Instagram tile with a wide image — whole bed when expanded, blurred fill on the sides */
+.tl--fit .tl__fit{object-fit:contain;opacity:0;transition:opacity 500ms var(--standard)}
+.tl--fit .tl__base{transition:filter 600ms var(--standard),transform 800ms var(--outExpo)}
+.tl--fit:hover .tl__fit,.tl--fit:focus-visible .tl__fit{opacity:1}
+.tl--fit:hover .tl__base,.tl--fit:focus-visible .tl__base{filter:blur(18px) brightness(.85);transform:scale(1.15)}
+@media (hover:none){.tl--fit .tl__fit{opacity:1}.tl--fit .tl__base{filter:blur(18px) brightness(.85);transform:scale(1.15)}}
+@container (max-width:767px){.tl--fit .tl__fit{opacity:1}.tl--fit .tl__base{filter:blur(18px) brightness(.85);transform:scale(1.15)}}
+@media (prefers-reduced-motion:reduce){.tl--fit .tl__fit,.tl--fit .tl__base{transition:none}}
+
+/* v5.5: O nama images lead into their worlds — slow zoom + arrow on hover */
+.duo__link{display:block;text-decoration:none;color:inherit}
+.duo__link .iw img{transition:transform 1.2s var(--outQuart)}
+.is-in .duo__link .iw img{transition:transform 1.2s var(--outQuart),opacity 600ms var(--standard)}
+.duo__link:hover .iw img,.duo__link:focus-visible .iw img{transform:scale(1.04)}
+.duo__arr{width:16px;height:16px;align-self:center;margin-left:auto;transition:transform 300ms var(--outQuart)}
+.duo__link:hover .duo__arr,.duo__link:focus-visible .duo__arr{transform:translate(3px,-3px)}
+.duo__link:hover .duo__cap span{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:6px;text-decoration-color:var(--brass)}
+@media (prefers-reduced-motion:reduce){.duo__link .iw img,.duo__arr{transition:none}.duo__link:hover .iw img{transform:none}}
