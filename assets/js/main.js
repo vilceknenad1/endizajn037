@@ -2,6 +2,8 @@
 (function () {
   'use strict';
   var root = document.querySelector('[data-root]'); if (!root) return;
+  /* hero variant: ?hero=dom shows only the "Za vaš dom" half */
+  try { if (new URLSearchParams(location.search).get('hero') === 'dom') root.classList.add('hero-dom'); } catch (e) {}
   var win = window, doc = document;
   var mq = function (q) { try { return win.matchMedia(q); } catch (e) { return { matches: false }; } };
   var rm = mq('(prefers-reduced-motion: reduce)');
